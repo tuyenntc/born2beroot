@@ -1,0 +1,15 @@
+#_____________________minute (0 - 59)
+#| ____________________hour (0 - 23)
+#| | ____________________day of month (1 -31)
+#| | |	____________________month (1 - 12)
+#| | | | ____________________day of week (0 - 6) (Sunday - Saturday); 7 is also sunday on some system 
+#| | | | |
+#| | | | |
+#* * * * * command_to_execute
+
+#* * * * * echo 'hello' >> ./test.txt
+#run a command every 10 minutes:*/10 * * * *
+#empty temp folder every friday at 5am
+#0 5 * * 5 rm -rf /tmp/*
+#backup images to gg drive every night at midnight
+#0 0 * * * rsync -a ~/Pictures/ ~/Google\ Drive/Pictures/
